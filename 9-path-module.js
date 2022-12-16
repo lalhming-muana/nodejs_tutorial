@@ -15,6 +15,9 @@ const base = path.basename(filePath);
 console.log(`The base filename is ${base}`);
 
 //The path.resolve() method resolves a sequence of paths or path segments into an absolute path.
+// your application is going to run in different environment
+// eg heroku or digital ocean
+ 
 const absolute = path.resolve(__dirname,'content','subfolder','test.txt');
 
 console.log(absolute);
